@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- HTML PAGE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작.쓸.기</title>
+
+    <!-- CSS PAGE -->
+    <head>
+        <title>CSS</title>
+        <link rel = "stylesheet" href="csspage.css">
+        <!-- CSS FONT 
+            1. 구글 폰트 사이트 접속
+            2. 한국어 지원 폰트 중 원하는 폰트 클릭
+            3. 폰트 중 select ~ 부분 클릭 후 link 복사
+            4. 복사한 링크 html에 붙여넣기 및 css에서 font-family로 사용 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Poor+Story&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- JS PAGE -->
+    <head>
+        <script type = "text/javascript" src = "jsscriptpage.js">
+        </script>   
+    </head>
+</head>
+
+
+<body>
+    <div id="part1">
+        <div class="body_fixed display_fix">
+            <span>
+                <img id="fix_image" src="title-001.png">
+            </span>
+        </div>
+        <div id="part1_image">
+            <img src="part1_image-002.png">
+        </div>
+        <p id="part1_title">
+            작 . 쓸 . 기
+        </p>
+        <p id="part1_p1">
+            작지만 쓸모있는 기능들
+        </p>
+        <p id="part1_p2">사소하지만 없으면 
+            불편한 모든 기능들을 
+            한 곳에서 해결하세요!
+        </p>
+        <div id="part1_button">  
+            <button id="part1_button1" onclick="scrollToSection('part2')">
+                2024 올해의 달력
+            </button>
+            <button id="part1_button2" onclick="scrollToSection('part3')">
+                날짜 계산기
+            </button>
+            <button id="part1_button3" onclick="scrollToSection('part4')">
+                바로가기3
+            </button>
+            <button id="part1_button4" onclick="scrollToSection('part4')">
+                바로가기4
+            </button>
+            <button id="part1_button5" onclick="scrollToSection('part4')">
+                바로가기5
+            </button>
+            <button id="part1_button6" onclick="scrollToSection('part4')">
+                바로가기6
+            </button>   
+        </div>
+    </div>
+    <div id="part2">
+        <p id="part2_title">2024년 달력</p>
+        <p id="part2_p1">올해의 공휴일과 주요 일정을 확인하고<br>
+        <b>나만의 특별한 2024년을 계획해보세요!</b></p>
+        <div id="part2_calender">
+            <form id="calender_form" class="display_fix">
+                <label id="calender_label" for="calender_choose_month">
+                    월을 선택하세요 :  
+                </label>
+                <select id="calender_choose_month" onchange="show_calender(this)">
+                    <option value="default_2024" selected>
+                         -
+                    </option>
+                    <option value="month1_2024">
+                        1월
+                    </option>
+                    <option value="month2_2024">
+                        2월
+                    </option>
+                    <option value="month3_2024">
+                        3월
+                    </option>
+                    <option value="month4_2024">
+                        4월
+                    </option>
+                    <option value="month5_2024">
+                        5월
+                    </option>
+                    <option value="month6_2024">
+                        6월
+                    </option>
+                    <option value="month7_2024">
+                        7월
+                    </option>
+                    <option value="month8_2024">
+                        8월
+                    </option>
+                    <option value="month9_2024">
+                        9월
+                    </option>
+                    <option value="month10_2024">
+                        10월
+                    </option>
+                    <option value="month11_2024">
+                        11월
+                    </option>
+                    <option value="month12_2024">
+                        12월
+                    </option> 
+                </select>
+            </form>
+        </div>
+        <p id="part2_p2">해당 월의 달력을 볼 수 있습니다.</p>
+        <table id="table1_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">31</td><td class="redcolor">1<br><span style="font-size: 20px;">신정</span></td><td>2</td><td>3</td><td>4</td><td>5</td><td class="bluecolor">6<br><span style="font-size: 20px;">소한</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="bluecolor">13</td>
+            </tr>
+            <tr>
+                <td class="redcolor">14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="bluecolor">20<br><span style="font-size: 20px;">대한</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="bluecolor">27</td>
+            </tr>
+            <tr>
+                <td class="redcolor">28</td><td>29</td><td>30</td><td>31</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td>
+            </tr>
+        </table>
+        <table id="table2_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">28</td><td class="graycolor">29</td><td class="graycolor">30</td><td class="graycolor">31</td><td>1</td><td>2</td><td class="bluecolor">3</td>
+            </tr>
+            <tr>
+                <td class="redcolor">4<br><span style="font-size: 20px;">입춘</span></td><td>5</td><td>6</td><td>7</td><td>8</td><td class="redcolor">9</td><td class="redcolor">10<br><span style="font-size: 20px;">설날</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">11</td><td class="redcolor">12<br><span style="font-size: 20px;">대체 휴일</span></td><td>13</td><td>14<br><span style="font-size: 20px">밸런타인데이</span></td><td>15</td><td>16</td><td class="bluecolor">17</td>
+            </tr>
+            <tr>
+                <td class="redcolor">18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td class="bluecolor">24<br><span style="font-size: 20px;">정월 대보름</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="graycolor">1</td><td class="graycolor">2</td>
+            </tr>
+        </table>
+        <table id="table3_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">25</td><td class="graycolor">26</td><td class="graycolor">27</td><td class="graycolor">28</td><td class="graycolor">29</td><td class="redcolor">1<br><span style="font-size: 20px;">삼일절</span></td><td class="bluecolor">2</td>
+            </tr>
+            <tr>
+                <td class="redcolor">3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td class="bluecolor">9</td>
+            </tr>
+            <tr>
+                <td class="redcolor">10</td><td>11</td><td>12</td><td>13</td><td>14<br><span style="font-size: 20px;">화이트데이</span></td><td>15</td><td class="bluecolor">16</td>
+            </tr>
+            <tr>
+                <td class="redcolor">17</td><td>18</td><td>19</td><td>20<br><span style="font-size: 20px;">춘분</span></td><td>21</td><td>22</td><td class="bluecolor">23</td>
+            </tr>
+            <tr>
+                <td class="redcolor">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="bluecolor">30</td>
+            </tr>
+            <tr>
+                <td class="redcolor">31</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td><td class="graycolor">4</td><td class="graycolor">5</td><td class="graycolor">6</td>
+            </tr>
+        </table>
+        <table id="table4_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">31</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5<br><span style="font-size: 20px;">식목일</span></td><td class="bluecolor">6</td>
+            </tr>
+            <tr>
+                <td class="redcolor">7</td><td>8</td><td>9</td><td class="redcolor">10<br><span style="font-size: 20px;">22대 국회의원 선거</span></td><td>11</td><td>12</td><td class="bluecolor">13</td>
+            </tr>
+            <tr>
+                <td class="redcolor">14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="bluecolor">20</td>
+            </tr>
+            <tr>
+                <td class="redcolor">21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td class="bluecolor">27</td>
+            </tr>
+            <tr>
+                <td class="redcolor">28</td><td>29</td><td>30</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td><td class="graycolor">4</td>
+            </tr>
+        </table>
+        <table id="table5_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">28</td><td class="graycolor">29</td><td class="graycolor">30</td><td>1<br><span style="font-size: 20px;">근로자의 날</span></td><td>2</td><td>3</td><td class="bluecolor">4</td>
+            </tr>
+            <tr>
+                <td class="redcolor">5<br><span style="font-size: 20px;">어린이날</span></td><td class="redcolor">6<br><span style="font-size: 20px;">대체 휴일</span></td><td>7</td><td>8<br><span style="font-size: 20px;">어버이날</span></td><td>9</td><td>10</td><td class="bluecolor">11</td>
+            </tr>
+            <tr>
+                <td class="redcolor">12</td><td>13</td><td>14</td><td class="redcolor">15<br><span style="font-size: 20px;">석가탄신일</span><br><span style="color: black; font-size: 20px;">스승의날</span></td><td>16</td><td>17</td><td class="bluecolor">18</td>
+            </tr>
+            <tr>
+                <td class="redcolor">19</td><td>20<br><span style="font-size: 20px;">성년의 날</span></td><td>21<br><span style="font-size: 20px;">부부의 날</span></td><td>22</td><td>23</td><td>24</td><td class="bluecolor">25</td>
+            </tr>
+            <tr>
+                <td class="redcolor">26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="graycolor">1</td>
+            </tr>
+        </table>
+        <table id="table6_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">26</td><td class="graycolor">27</td><td class="graycolor">28</td><td class="graycolor">29</td><td class="graycolor">30</td><td class="graycolor">31</td><td class="bluecolor">1</td>
+            </tr>
+            <tr>
+                <td class="redcolor">2</td><td>3</td><td>4</td><td>5</td><td class="redcolor">6<br><span style="font-size: 20px;">현충일</span></td><td>7</td><td class="bluecolor">8</td>
+            </tr>
+            <tr>
+                <td class="redcolor">9</td><td>10<br><span style="font-size: 20px;">단오</span></td><td>11</td><td>12</td><td>13</td><td>14</td><td class="bluecolor">15</td>
+            </tr>
+            <tr>
+                <td class="redcolor">16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21<br><span style="font-size: 20px;">하지</span></td><td class="bluecolor">22</td>
+            </tr>
+            <tr>
+                <td class="redcolor">23</td><td>24</td><td>25<br><span style="font-size: 20px;">6.25 전쟁일</span></td><td>26</td><td>27</td><td>28</td><td class="bluecolor">29</td>
+            </tr>
+            <tr>
+                <td class="redcolor">30</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td><td class="graycolor">4</td><td class="graycolor">5</td><td class="graycolor">6</td>
+            </tr>
+        </table>
+        <table id="table7_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td class="bluecolor">6<br><span style="font-size: 20px;">소서</span</td>
+            </tr>
+            <tr>
+                <td class="redcolor">7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td class="bluecolor">13</td>
+            </tr>
+            <tr>
+                <td class="redcolor">14</td><td>15<br><span style="font-size: 20px;">초복</span></td><td>16</td><td>17<br><span style="font-size: 20px;">제헌절</span></td><td>18</td><td>19</td><td class="bluecolor">20</td>
+            </tr>
+            <tr>
+                <td class="redcolor">21</td><td>22<br><span style="font-size: 20px;">대서</span></td><td>23</td><td>24</td><td>25<br><span style="font-size: 20px;">중복</span></td><td>26</td><td class="bluecolor">27</td>
+            </tr>
+            <tr>
+                <td class="redcolor">28</td><td>29</td><td>30</td><td>31</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td>
+            </tr>
+        </table>
+        <table id="table8_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">28</td><td class="graycolor">29</td><td class="graycolor">30</td><td class="graycolor">31</td><td>1</td><td>2</td><td class="bluecolor">3</td>
+            </tr>
+            <tr>
+                <td class="redcolor">4</td><td>5</td><td>6</td><td>7<br><span style="font-size: 20px;">입추</span></td><td>8</td><td>9</td><td class="bluecolor">10<br><span style="font-size: 20px;">칠석</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">11</td><td>12</td><td>13</td><td>14<br><span style="font-size: 20px;">말복</span></td><td class="redcolor">15<br><span style="font-size: 20px;">광복절</span></td><td>16</td><td class="bluecolor">17</td>
+            </tr>
+            <tr>
+                <td class="redcolor">18</td><td>19</td><td>20</td><td>21</td><td>22<br><span style="font-size: 20px;">처서</span></td><td>23</td><td class="bluecolor">24</td>
+            </tr>
+            <tr>
+                <td class="redcolor">25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td class="bluecolor">31</td>
+            </tr>
+        </table>
+        <table id="table9_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="redcolor">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="bluecolor">7<br><span style="font-size: 20px;">백로</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="bluecolor">14</td>
+            </tr>
+            <tr>
+                <td class="redcolor">15</td><td class="redcolor">16</td><td class="redcolor">17<br><span style="font-size: 20px;">추석</span></td><td class="redcolor">18</td><td>19</td><td>20</td><td class="bluecolor">21<br><span style="font-size: 20px;">청년의날</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">22<br><span style="font-size: 20px;">추분</span></td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="bluecolor">28</td>
+            </tr>
+            <tr>
+                <td class="redcolor">29</td><td>30</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td><td class="graycolor">4</td><td class="graycolor">5</td>
+            </tr>
+        </table>
+        <table id="table10_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">29</td><td class="graycolor">30</td><td>1<br><span style="font-size: 20px;">국군의 날</span></td><td>2</td><td class="redcolor">3<br><span style="font-size: 20px;">개천절</span></td><td>4</td><td class="bluecolor">5</td>
+            </tr>
+            <tr>
+                <td class="redcolor">6</td><td>7</td><td>8<br><span style="font-size: 20px;">한로</span></td><td class="redcolor">9<br><span style="font-size: 20px;">한글날</span></td><td>10</td><td>11</td><td class="bluecolor">12</td>
+            </tr>
+            <tr>
+                <td class="redcolor">13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="bluecolor">19<br><span style="font-size: 20px;">문화의 날</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">20</td><td>21</td><td>22</td><td>23<br><span style="font-size: 20px;">상강</span></td><td>24</td><td>25<br><span style="font-size: 20px;">독도의 날</span></td><td class="bluecolor">26</td>
+            </tr>
+            <tr>
+                <td class="redcolor">27</td><td>28</td><td>29</td><td>30</td><td>31</td><td class="graycolor">1</td><td class="graycolor">2</td>
+            </tr>
+        </table>
+        <table id="table11_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="graycolor">27</td><td class="graycolor">28</td><td class="graycolor">29</td><td class="graycolor">30</td><td class="graycolor">31</td><td>1</td><td class="bluecolor">2</td>
+            </tr>
+            <tr>
+                <td class="redcolor">3</td><td>4</td><td>5</td><td>6</td><td>7<br><span style="font-size: 20px;">입동</span></td><td>8</td><td class="bluecolor">9</td>
+            </tr>
+            <tr>
+                <td class="redcolor">10</td><td>11<br><span style="font-size: 20px;">농업인의 날</span><br><span style="font-size: 20px;">빼빼로데이</span></td><td>12</td><td>13</td><td>14<br><span style="font-size: 20px;">2025학년도<br>수능</span></td><td>15</td><td class="bluecolor">16</td>
+            </tr>
+            <tr>
+                <td class="redcolor">17<br><span style="font-size: 20px; color:black">순국선열의 날</span></td><td>18</td><td>19</td><td>20</td><td>21</td><td>22<br><span style="font-size: 20px;">소설</span></td><td class="bluecolor">23</td>
+            </tr>
+            <tr>
+                <td class="redcolor">24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td class="bluecolor">30</td>
+            </tr>
+        </table>
+        <table id="table12_2024" class="display_hidden">
+            <tr>
+                <th class="redcolor">Sun</th><th>Mon</th><th>Tue</th><th>Wen</th><th>Tur</th><th>Fri</th><th class="bluecolor">Sat</th>
+            </tr>
+            <tr>
+                <td class="redcolor">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td class="bluecolor">7<br><span style="font-size: 20px;">대설</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td class="bluecolor">14</td>
+            </tr>
+            <tr>
+                <td class="redcolor">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="bluecolor">21<br><span style="font-size: 20px;">동지</span></td>
+            </tr>
+            <tr>
+                <td class="redcolor">22</td><td>23</td><td>24</td><td class="redcolor">25<br><span style="font-size: 20px;">성탄절</span><br><span style="font-size: 20px;">(크리스마스)</span></td><td>26</td><td>27</td><td class="bluecolor">28</td>
+            </tr>
+            <tr>
+                <td class="redcolor">29</td><td>30</td><td>31</td><td class="graycolor">1</td><td class="graycolor">2</td><td class="graycolor">3</td><td class="graycolor">4</td>
+            </tr>
+        </table>
+        <div id="part2_holiday" class="display_fix">
+            <div>
+                <p id="part2_p3"># 한눈에 보는 2024년 공휴일</p>
+                <table id="holiday_2024">
+                    <tr>
+                        <td>1월</td><td>1일(수)</td><td class="boldfont">신정</td><td>5월</td><td>15일(수)</td><td class="boldfont">석가탄신일</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">2월</td><td>9일(금)</td><td rowspan="3" class="boldfont">설날 연휴</td><td>6월</td><td>6일(목)</td><td class="boldfont">현충일</td>
+                    </tr>
+                    <tr>
+                        <td>10일(토)</td><td>8월</td><td>15일(목)</td><td class="boldfont">광복절</td>
+                    </tr>
+                    <tr>
+                        <td>11일(일)</td><td rowspan="3">9월</td><td>16일(월)</td><td rowspan="3" class="boldfont">추석 연휴</td>
+                    </tr>
+                    <tr>
+                        <td>12일(월)</td><td class="boldfont">대체 휴일</td><td>17일(화)</td>
+                    </tr>
+                    <tr>
+                        <td>3월</td><td>1일(금)</td><td class="boldfont">삼일절</td><td>18일(수)</td>
+                    </tr>
+                    <tr>
+                        <td>4월</td><td>10일(수)</td><td class="boldfont"><span style="font-size: 18px;">22대 국회의원 선거</span></td><td rowspan="2">10월</td><td>3일(목)</td><td class="boldfont">개천절</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5월</td><td>5일(일)</td><td class="boldfont">어린이날</td><td>9일(수)</td><td class="boldfont">한글날</td>
+                    </tr>
+                    <tr>
+                        <td>6일(월)</td><td class="boldfont">대체 휴일</td><td>12월</td><td>25일(수)</td><td class="boldfont">성탄절</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="part3">
+        <p id="part3_title">날짜 계산기</p>
+        <p id="part3_p1">군 전역일부터 출산 예정일까지!<br>
+        <b>나에게 남은 일수를 계산해보세요!</b></p>
+        <div id="part3_date_calculater">
+            <form id="date_calculater_form" class="display_fix">
+                <label id="date_calculater_label" for="date_calculater_choose_month">
+                    모드를 선택하세요 :   
+                </label>
+                <select id="date_calculater_choose_mode" onchange="show_date_calculater(this)">
+                    <option value="default_date_calculater" selected>
+                         -
+                    </option>
+                    <option value="d_day_date_calculater">
+                        D-day 계산
+                    </option>
+                    <option value="military_date_calculater">
+                        군 전역일 계산
+                    </option>
+                    <option value="period_date_calculater">
+                        다음 월경일 계산
+                    </option>
+                    <option value="birth_date_calculater">
+                        출산 예정일 계산
+                    </option>
+                </select>
+            </form>
+        </div>
+        <p id="part3_p2" class="display_hidden">해당 모드의 계산기를 사용할 수 있습니다.</p>
+        <div id="d_day" class="display_hidden">
+            <form id="d_day_form">
+                <div id="d_day_form1" class="display_fix">
+                    <p>시작 일자 : </p>
+                    <input type="text" id="d_day_input1">
+                    <label for="d_day_input1">년</label>
+                    <input type="text" id="d_day_input2">
+                    <label for="d_day_input2">월</label>
+                    <input type="text" id="d_day_input3">
+                    <label for="d_day_input3">일</label>
+                </div>
+                <div id="d_day_form1" class="display_fix">
+                    <p>종료 일자 : </p>
+                    <input type="text" id="d_day_input4">
+                    <label for="d_day_input4">년</label>
+                    <input type="text" id="d_day_input5">
+                    <label for="d_day_input5">월</label>
+                    <input type="text" id="d_day_input6">
+                    <label for="d_day_input6">일</label>
+                </div>
+                <div class="display_fix">
+                    <button id="d_day_button" onclick="show_d_day_result()">계산하기</button>
+                </div>
+                <div id="d_day_result" class="display_fix">
+                    <p id="d_day_result_p">시작 일자와 종료 일자를 입력하세요.</p>
+                </div>
+                <div class="display_fix">
+                    <button id="d_day_reset" onclick="reset_d_day_input()">초기화</button>
+                </div>
+            </form>
+        </div>
+        <div id="military" class="display_hidden">
+            <form id="military_form">
+                <div id="military_form1" class="display_fix">
+                    <input type="radio" id="military_input" name="military_input" value="army" checked />육군
+                    <input type="radio" id="military_input" name="military_input" value="navy" />해군
+                    <input type="radio" id="military_input" name="military_input" value="airforce" />공군
+                    <input type="radio" id="military_input" name="military_input" value="marinecorps" />해병대
+                    <input type="radio" id="military_input" name="military_input" value="police" />의무경찰
+                    <input type="radio" id="military_input" name="military_input" value="seapolice" />해양의무경찰
+                    <input type="radio" id="military_input" name="military_input" value="firefighter" />의무소방원
+                    <input type="radio" id="military_input" name="military_input" value="social" />사회복무요원
+                </div>   
+                <div id="military_form1" class="display_fix">    
+                    <p>입대 일자 : </p>
+                    <input type="text" id="military_input1">
+                    <label for="military_input1">년</label>
+                    <input type="text" id="military_input2">
+                    <label for="military_input2">월</label>
+                    <input type="text" id="military_input3">
+                    <label for="military_input3">일</label>
+                </div>
+                <div class="display_fix">
+                    <button id="military_button" onclick="show_military_result()">계산하기</button>
+                </div>
+                <div id="military_result" class="display_fix">
+                    <p id="military_result_p">복무 형태와 입대 일자를 입력하세요.</p>
+                </div>
+                <div class="display_fix">
+                    <button id="military_reset" onclick="reset_military_input()">초기화</button>
+                </div>
+            </form>
+        </div>
+        <div id="period">
+            <p>test</p>
+        </div>
+        <div id="birth" class="display_hidden">
+            <p>test</p>
+        </div>
+    </div>
+
+    <div id="part4">
+        
+    </div>
+</body>
+
+
+
+</html>

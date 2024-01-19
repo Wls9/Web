@@ -1,0 +1,795 @@
+body {
+    font-family: 'Poor Story', system-ui;
+    max-width: 1500px;
+    min-width: 1500px;
+}
+
+#part1 {
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom: 500px;
+}
+
+.display_fix {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.body_fixed {
+    position: fixed;
+    z-index: 9999;
+    width: 1500px;
+    height: 10%;
+    background-color: bisque;
+    border-radius: 25px;
+    animation-name: fadein;
+    animation-direction: normal;
+    animation-timeline: scroll();
+}  
+
+.display_hidden {
+    display: none;
+}
+
+.redcolor {
+    color: red;
+    border-color: black;
+}
+
+.bluecolor {
+    color: blue;
+    border-color: black;
+}
+
+.graycolor {
+    color: lightgray;
+    border-color: black;
+}
+
+.boldfont {
+    font-weight: 600;
+    background-color:antiquewhite;
+}
+
+#fix_image {
+    align-content: center;
+    width: 500px;
+    height: 80px;
+}
+
+/*@keyframes colorchange {
+    0% { background-color: bisque; direction: width;}
+    50% { background-color:lightpink;}
+    100% { background-color: bisque; }
+}*/
+
+#part1_image {
+    position: absolute;
+}
+
+#part1_title {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: 0.1;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}   
+
+@keyframes fadein {
+    0% { opacity: 0.1; }
+    100% { opacity: 1; }
+}
+
+#part1_p1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    opacity: 0.1;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#part1_p2 {
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    color: gray;
+    opacity: 0.1;
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#part1_button {
+    margin-bottom: 100px;
+}
+
+#part1_button1 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: orange;
+}
+
+#part1_button1:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: bisque;
+}
+
+#part1_button2 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    left: 500px;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: green;
+}
+
+#part1_button2:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: lightgreen;
+}
+
+#part1_button3 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    left: 950px;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: orange;
+}
+
+#part1_button3:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: bisque;
+}
+
+#part1_button4 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    top: 1000px;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: orange;
+}
+
+#part1_button4:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: bisque;
+}
+
+#part1_button5 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: orange;
+}
+
+#part1_button5:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: bisque;
+}
+
+#part1_button6 {
+    margin: 25px 100px 25px 100px;
+    padding: 25px 75px 25px 75px;
+    border-radius: 90px;
+    border: none;
+    position: absolute;
+    top: 1000px;
+    left: 950px;
+    font-size: 40px;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 600;
+    color: orange;
+}
+
+#part1_button6:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: bisque;
+}
+
+@keyframes scale {
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.0); }
+}
+
+#part2 {
+    margin: 100px 100px 150px 100px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: orange;
+}   
+
+#part2_title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: orange;
+}
+
+#part2_p1 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: 400;
+    color: black;
+}  
+
+#part2_calender {
+    margin: 100px 150px 50px 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: orange;
+}
+
+#calender_label {
+    font-size: 25px;
+    font-weight: 600;
+    color: orange;
+}
+
+#calender_choose_month {
+    font-family: 'Poor Story', system-ui;
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: orange;
+}
+
+#calender_choose_month:hover {
+    background-color: bisque;
+}
+
+#part2_p2 {
+    position: absolute;
+    top: 2000px;
+    left: 300px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 30px 300px 30px 300px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: bisque;
+}
+
+#table1_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table1_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table1_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+}   
+
+#table2_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table2_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table2_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table3_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table3_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table3_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table4_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table4_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table4_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table5_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table5_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table5_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table6_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table6_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table6_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table7_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table7_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table7_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table8_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table8_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table8_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table9_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table9_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table9_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table10_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table10_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table10_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table11_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table11_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table11_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#table12_2024 {
+    position: absolute;
+    border-collapse: collapse;
+    top: 2000px;
+    left: 300px;
+    max-width: 1050px;
+    max-height: 630px;
+}
+
+#table12_2024 td {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    width: 120px;
+    height: 90px;
+    font-size: 25px;
+}   
+
+#table12_2024 th {
+    border-style: solid;
+    border-width: 1px;
+    width: 120px;
+    height: 30px;
+    font-size: 30px;
+    background-color: lemonchiffon;
+} 
+
+#part2_holiday {
+    margin: 750px 150px 50px 150px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: orange;
+    font-size: 22px;
+}
+
+#part2_p3 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 600;
+    color: orange;
+}
+
+#holiday_2024 {
+    border-collapse: collapse;
+    max-width: 1050px;
+    max-height: 630px;
+    text-align: center;
+}
+
+#holiday_2024 td {
+    border-color: red;
+    color: red;
+    width: 140px;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#part3 {
+    margin: 100px 100px 150px 100px;
+    /*padding-bottom: 30px;*/
+    padding-bottom: 1000px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: green;
+}   
+
+#part3_title {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: green;
+}
+
+#part3_p1 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: 400;
+    color: black;
+}
+
+#part3_date_calculater {
+    margin: 100px 150px 50px 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: green;
+}
+
+#date_calculater_label {
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+}
+
+#date_calculater_choose_mode {
+    font-family: 'Poor Story', system-ui;
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: dotted;
+    border-color: green;
+}
+
+#date_calculater_choose_mode:hover {
+    background-color: lightgreen;
+}
+
+#part3_p2 {
+    position: absolute;
+    top: 4160px;
+    left: 265px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 30px 300px 30px 300px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightgreen;
+}
+
+#d_day_form1, #military_form1 {
+    margin: 5px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#d_day_input1, #d_day_input2, #d_day_input3, #d_day_input4, #d_day_input5, #d_day_input6,
+#military_input1, #military_input2, #military_input3 {
+    width: 50px;
+    font-family: 'Poor Story', system-ui;
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 5px;
+    text-align: right;
+    border-color: lightgray;
+}
+
+#d_day_button, #d_day_reset, #military_button, #military_reset {
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 45px;
+    border-style: none;
+    background-color:rgb(235, 247, 222);
+    font-family: 'Poor Story', system-ui;
+    font-size: 20px;
+}
+
+#d_day_button:hover, #d_day_reset:hover, #military_button:hover, #military_reset:hover {
+    animation-name: scale;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    background-color: lightgreen;
+}
+
+#d_day_result, #military_result {
+    margin: 30px 150px 25px 150px;
+    border-style: dotted;
+    border-color: lightgreen;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#d_day_result_p, #military_result_p {
+    font-size: 25px;
+}
+
+#military_input {
+    margin: 0px 10px 0px 30px;
+}
+
+
